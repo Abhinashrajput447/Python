@@ -1,11 +1,6 @@
-def main():
-  x = int(input())
-  y = int(input())
-  z = int(input())
-  res = sumOfThree(x, y, z)
-  print(res)
+# in this place of { => we keep ":" in python 
+x = int(input("what's x? "))
+y = int(input("what's y? "))
 
-def sumOfThree(x, y, z):
-  return x+y+z
-
-main()
+if x != y :
+  print("X != Y")
