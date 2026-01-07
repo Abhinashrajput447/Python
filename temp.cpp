@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+int main() {
 
-
-cout << int x= cin() << int y = cin();
+}
