@@ -39,9 +39,14 @@ def main():
 
 
 def is_even(n):
-  if n%2 == 0 :
-    return True
-  else:
-    return False
+  return n % 2 == 0
   
+# x = int(input("what's x ? "))
+# def isEven(n):
+#   result = "even" if n%2==0 else "odd"
+#   print(result)
+# isEven(x)
+
+
+
 main()
