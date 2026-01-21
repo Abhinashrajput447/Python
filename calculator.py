@@ -9,4 +9,17 @@ def checkName(n):
   else:
     print("Who are you")
 
-checkName(name)
+
+def checkName2():
+  match name:
+    case "Abhi" | "Abhinash" | "a":
+      print("Abhinash")
+    case "Vashu":
+      print("Varsha")
+    case "watch":
+      print("Hii watch")
+    case _:
+      print("Who?")
+    
+
+checkName2()
