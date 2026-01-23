@@ -30,5 +30,7 @@ students = {
 
 # print(students["Draco"])
 
-for name in students:
-  print(name, students[name], sep=", ")
+# for name in students:
+#   print(name, students[name], sep=", ")
+
+print(students["Draco"])
