@@ -18,4 +18,17 @@
 
 # print(abs(-1))
 
-print(isinstance(10, int))
+# print(isinstance(10, int))
+
+
+students = {
+  "Hermione":"Gryffindor",
+  "Harry": "Gryffindor", 
+  "Ron": "Gryffindor", 
+  "Draco": "Slytherin",
+}
+
+# print(students["Draco"])
+
+for name in students:
+  print(name, students[name], sep=", ")
