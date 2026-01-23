@@ -51,5 +51,32 @@ def sum1ToN(n):
     sum += i
   return sum
 
-print(sum1ToN(n))
-  
+
+def oneToN(n):
+  i = 1
+  while i <= n:
+    print(i, end=" ")
+    i += 1
+
+def reverse2(n):
+  while n >= 1:
+    print(n, end=" ")
+    n -= 1
+
+def sumOFItDig(n):
+  sum = 0
+  while n != 0 :
+    ld = n % 10
+    sum += ld
+    n //= 10
+  return sum
+
+def reverseAnum(n):
+  rev = 0
+  while n > 0:
+    ld = n % 10
+    rev = rev*10+ld
+    n //= 10
+  return rev
+
+print(reverseAnum(n))
