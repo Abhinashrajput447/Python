@@ -1,8 +1,7 @@
-while True:
-  n = int(input("what's n? "))
-  if n > 0:
-    break
+students = ["Abhinash", "Varsha", "Ritik", "Ashutosh"]
 
-for _ in range(n):
-  print("meow")
+# print(students[0])/
+
+for i in students:
+  print(i, end=" ")
 
