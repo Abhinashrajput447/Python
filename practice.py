@@ -63,6 +63,7 @@ def reverse2(n):
     print(n, end=" ")
     n -= 1
 
+#Sum of digit number
 def sumOFItDig(n):
   sum = 0
   while n != 0 :
@@ -71,6 +72,7 @@ def sumOFItDig(n):
     n //= 10
   return sum
 
+# Reversing a number
 def reverseAnum(n):
   rev = 0
   while n > 0:
@@ -79,7 +81,7 @@ def reverseAnum(n):
     n //= 10
   return rev
 
-
+#Digit count
 def numOfDig(n):
   cnt = 0
   while n > 0:
@@ -88,10 +90,20 @@ def numOfDig(n):
     n //= 10
   return cnt
 
+#multiplication table 
 def mulTable(n):
   i = 1
   while i <= 10:
     print(i * n, "=", i*n)
     i += 1
 
-mulTable(5)
+
+def prime(n):
+  if n <= 0: return False
+
+  for i in range(2, int(n**0.5)+1):
+    if n % i == 0:
+      return False
+  return True
+      
+print(prime(n))
