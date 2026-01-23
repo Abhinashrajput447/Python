@@ -32,6 +32,24 @@ def num1ToNDivBy3():
     if i%3 == 0:
       print(i, end=" ")
 
+def cntDivBy5():
+  cnt = 0
+  for i in range(1, n+1):
+    if i % 5 == 0:
+      cnt += 1
+  return cnt
 
-num1ToNDivBy3()
+
+def noExp7(n):
+  for i in range(1, n+1):
+    if i % 7 != 0:
+      print(i, end=" ")
+
+def sum1ToN(n):
+  sum = 0
+  for i in range(1, n+1):
+    sum += i
+  return sum
+
+print(sum1ToN(n))
   
