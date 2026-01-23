@@ -79,4 +79,19 @@ def reverseAnum(n):
     n //= 10
   return rev
 
-print(reverseAnum(n))
+
+def numOfDig(n):
+  cnt = 0
+  while n > 0:
+    ld = n%10
+    cnt += 1
+    n //= 10
+  return cnt
+
+def mulTable(n):
+  i = 1
+  while i <= 10:
+    print(i * n, "=", i*n)
+    i += 1
+
+mulTable(5)
