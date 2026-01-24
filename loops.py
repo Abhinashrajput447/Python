@@ -21,14 +21,21 @@
 # print(isinstance(10, int))
 
 
-students = {
-  "Hermione":"Gryffindor",
-  "Harry": "Gryffindor", 
-  "Ron": "Gryffindor", 
-  "Draco": "Slytherin",
-}
+# students = {
+#   "Hermione":"Gryffindor",
+#   "Harry": "Gryffindor", 
+#   "Ron": "Gryffindor", 
+#   "Draco": "Slytherin",
+# }
 
 # print(students["Harry"])
 
-for name in students:
-  print(name, students[name], sep=", ")
+students = [
+  {"name": "Ahinash", "house":"Vijayaada", "patronus": "Other"},
+  {"name": "Varsha", "house":"Madhuban", "patronus": "Other"},
+  {"name": "Ritik", "house":"Sitakund", "patronus": "BPSC"},
+  {"name": "Ashutosh", "house":"Chap", "patronus": None},
+]
+
+for i, student in enumerate(students):
+  print(i, student["name"], student["house"], student["patronus"], sep=", ")
