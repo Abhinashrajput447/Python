@@ -111,4 +111,27 @@ def palindrome(n):
     return True
   return False
 
-print(palindrome(n))
+
+def fact(n):
+  if n == 0: return 1
+  return n*fact(n-1)
+
+def fact2(n):
+  fact = 1
+  for i in range(1, n+1):
+    fact *= i
+  return fact
+
+def fib(n):
+  if n == 0: return 0
+  if n == 1 or n == 2: return 1
+  fibo = fib(n-1)+fib(n-2)
+
+  return fibo
+
+def fib2(n):
+  a = 0, b = 1
+  for i in range(n):
+    
+
+print(fib(n))
