@@ -105,5 +105,10 @@ def prime(n):
     if n % i == 0:
       return False
   return True
-      
-print(prime(n))
+    
+def palindrome(n):
+  if reverseAnum(n) == n:
+    return True
+  return False
+
+print(palindrome(n))
