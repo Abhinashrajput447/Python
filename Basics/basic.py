@@ -1,3 +1,7 @@
+def main():
+  x = get_int()
+  print(f"x is {x}")
+
 def errorHandler():
   try:
     x = int(input("What's x ? "))
@@ -6,26 +10,30 @@ def errorHandler():
   else:
     print(f"x is {x}")
 
+def get_int():
+  while True:
+    try:
+      return int(input("What's x ? "))
+    except ValueError:
+      pass
 
-def errorhandlerStr():
-  try:
-    userName = input("what's x? ")
-  except:
-    print("X is not a string ")
-  else:
-    if userName % 1 != 0:
-      print(f"userName is '{userName}'")
-    else:
-      print("invalid userName try again")
+    
+    # else:
+    #   return x
+  # return x
+  # print(f"x is {x}")
+
+
+get_int()
 
 
 def userNamezValidChecker():
   userName = input("what's username? ")
 
-  if " " in userName:
-    print("Invalid username: space not allowed")
-  if not userName[0].isalpha():
-    print("Invalid username: must start with a letter")
+  if " " in userName or userName[0].isalpha():
+    print("user anme contain 'a-z', 'A-Z', '0-9'")
+    # if not userName[0].isalpha():
+    #   print("Invalid username: must start with a letter")
   if not userName.isalpha():
     print("Invalid username: only letter Allowed")
     return
@@ -33,4 +41,4 @@ def userNamezValidChecker():
   print(f"valid username: '{userName}'")
 
 
-userNamezValidChecker()
+# userNamezValidChecker()
